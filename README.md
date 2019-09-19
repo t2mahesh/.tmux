@@ -5,7 +5,7 @@ Tmux config and status line, easy to use.
 To install, run the following from your terminal: (you may want to backup your existing ~/.tmux.conf first)
 ```
 $ cd
-$ git clone https://github.com/gpakosz/.tmux.git
+$ git clone https://github.com/t2mahesh/.tmux.git
 $ ln -s -f .tmux/.tmux.conf
 ```
 
