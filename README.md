@@ -18,5 +18,6 @@ Asuming you have used `.bash_profile`
 ```
 $ source ~/.bash_profile
 ```
+If the above is not set, it will get set inside `wan-ip.sh` at each first run. 
 
 Open `~/.tmux/.tmux.conf` search for `battery.sh` and replace it with `wan-ip.sh`. Save and reload tmux. 

@@ -1,10 +1,8 @@
 #!/bin/bash
 
-if [ -n "$MY_WAN_IP" ]; then
-    echo "$MY_WAN_IP"
-else
-    # inside .zshrc put the following line.
-    # export MY_WAN_IP=$(curl --max-time 2 -s ip.me)
-    echo " -W- "
+if [ -z "$MY_WAN_IP" ]
+then
+    export MY_WAN_IP=$(curl --max-time 2 -s ip.me)
 fi
-# echo $(curl ip.me)
+
+echo "$MY_WAN_IP"
